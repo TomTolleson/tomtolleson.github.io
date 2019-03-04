@@ -12,4 +12,4 @@ That said, having the quantum "chandelier" functioning sounds like we’ve opene
 
 IBM Unveils World's First Integrated Quantum Computing System for Commercial Use:
 
-https://newsroom.ibm.com/2019-01-08-IBM-Unveils-Worlds-First-Integrated-Quantum-Computing-System-for-Commercial-Use
+[newsroom] (https://newsroom.ibm.com/2019-01-08-IBM-Unveils-Worlds-First-Integrated-Quantum-Computing-System-for-Commercial-Use)
