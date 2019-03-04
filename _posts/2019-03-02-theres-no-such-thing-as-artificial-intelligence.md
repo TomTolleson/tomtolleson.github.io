@@ -4,7 +4,7 @@ title:  "There is No Such Thing as Artificial Intelligence"
 date:   2019-03-02
 categories: artificial intelligence, media
 ---
-There is no such thing as artificial intelligence. That is, other than a marketing term for a collection of different kinds of machine learning. That reality doesn’t keep the media from running stories claiming that computers are now "thinking" or "reading" which of course they aren’t because they don’t do that. Computers perform fast, iterative statistical computations which can, once models are trained, tend to provide useful output. y=f(x).
+That is, other than a marketing term for a collection of different kinds of machine learning. That reality doesn’t keep the media from running stories claiming that computers are now "thinking" or "reading" which of course they aren’t because they don’t do that. Computers perform fast, iterative statistical computations which can, once models are trained, tend to provide useful output. y=f(x).
 
 With all that hype in mind I’m not sure how excited I should be about the IBM quantum computer. If it does actually use superposition, then the era of zeroes and ones is over like the steam engine; which also means that basic logic gates could suddenly seem as distant as sundials (though both are still valid technologies). 
 
