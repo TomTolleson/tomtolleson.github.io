@@ -16,7 +16,7 @@
 title: TomTolleson.github.io
 email: tomtolleson@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Data Engineer, music composer and coastal navigator. I live in New York City.
+  Data engineer, music composer and coastal navigator. I live in New York City.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ThomasTolleson
