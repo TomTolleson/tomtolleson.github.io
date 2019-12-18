@@ -5,7 +5,7 @@
 layout: home
 ---
 
-##Repositories
+#Repositories
 
 [Old Weather](https://github.com/TomTolleson/Old-Weather) - This repository contains my pro bono work with NOAA's Old Weather Project which extracts and interprets oceanic and polar ice data from 19th-Century ship logs. For this project to produce data that can be dealt with by modern methods, the handwritten logs would either need to be keyed in manually by humans or converted from handwriting to alphanumberic text via machine learning. This repository contains the Python scripts, Postgres database and data pipleine structures in a portable, distributed Docker Swarm format. All technology used is free and open source.
 
