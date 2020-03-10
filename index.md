@@ -1,6 +1,17 @@
 ---
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+...
+<div id="my-github-projects"/>;
+...
+<script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.min.js" type="text/javascript"></script>
+<script src="/javascripts/git.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function() {
+        $("#my-github-projects").loadRepositories(TomTolleson);
+    });
+</script>
+
 
 layout: home
 ---
