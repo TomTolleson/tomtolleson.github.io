@@ -8,6 +8,14 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
+REPOS
+
+{% for repository in site.github.public_repositories %}
+  <a href='{{ repository.html_url }}'>
+    {{ repository.name }}
+  </a>
+{% endfor %}
+
 ```markdown
 Syntax highlighted code block
 
