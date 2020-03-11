@@ -1,7 +1,0 @@
-
-
-
-
-
-
-{% include_relative about.md %}
