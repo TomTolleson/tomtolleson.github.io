@@ -17,6 +17,25 @@ title: TomTolleson.github.io
 email: tomtolleson@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Data engineer, music composer and coastal navigator. I live in New York City.
+
+  ![Tom Tolleson](/tom.jpg){:class="img-responsive"}
+
+  Tom Tolleson is the Director of Data Engineering at 360i with a mission to improve private and public technology with secure, reliable data services.
+
+  I provide air support to both data engineering and data science teams and guide analytics to bring sophisticated, evident insights into organizational processes. This drives change while improving reliability, scalability, and cost efficiency.
+
+  Core Competencies:
+
+  SQL, Python, SCALA, C++, Hadoop, Spark, AWS, GCP, Azure, Strategic Business Planning, Solutions Architecture
+
+  Academic skills:
+
+  Machine Learning
+
+
+  [linkedin.com](https://www.linkedin.com/in/tomtolleson/)
+
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ThomasTolleson
