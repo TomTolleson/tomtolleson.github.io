@@ -87,7 +87,7 @@ for(var entry_key in entries) {
 }
 </script>
 
-below are movies.
+below are movies!
 
 <div id="movies-list">
 </div>
