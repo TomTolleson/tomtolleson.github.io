@@ -1,4 +1,15 @@
 <script src="https://tomtolleson.github.io/gitapi.js
 "></script>
 
-{% include about.md %}
+
+---
+layout: default
+---
+
+some text here
+
+{% include_relative about.md %}
+
+some more text here
+
+{% include_relative about.md %}
