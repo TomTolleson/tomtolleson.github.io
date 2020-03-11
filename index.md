@@ -1,18 +1,13 @@
 ## My Github Projects and Repositories
 
-You can use the [editor on GitHub](https://github.com/TomTolleson/tomtolleson.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 ### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-REPOS
 
 {% for repository in site.github.public_repositories %}
   <a href='{{ repository.html_url }}'>
-    {{ repository.name }}
+    {{ ### repository.name }}
   </a>
 {% endfor %}
 
