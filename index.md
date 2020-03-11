@@ -10,7 +10,7 @@
     });
 </script>
 
-
+GET /orgs/:org/repos
 
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-app.js"></script>
