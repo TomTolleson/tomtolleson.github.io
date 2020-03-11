@@ -5,8 +5,9 @@
 {% for repository in site.github.public_repositories %}
   <a href='{{ repository.html_url }}'>
     {{ repository.name }}
-    {{ repository.description }}
+    
   </a>
+  <p>{{ repository.description }}</p>
 {% endfor %}
 
 ```markdown
