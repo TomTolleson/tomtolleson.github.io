@@ -89,3 +89,4 @@ for(var entry_key in entries) {
 
 <div id="movies-list">
 </div>
+
