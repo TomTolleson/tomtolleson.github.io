@@ -8,4 +8,4 @@
   <p>{{ repository.description }}</p>
 {% endfor %}
 
-{% include_relative /about.md %}
+
