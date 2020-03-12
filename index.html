@@ -4,13 +4,7 @@ title: Home
 ---
 <h1>My Github Projects and Repositories</h1>
 
-{% for repository in site.github.public_repositories %}
-  <a href='{{ repository.html_url }}'>
-    {{ repository.name }} 
-  </a>
 
-  <p>{{ repository.description }}</p>
-{% endfor %}
 
 
 <div class="posts">
