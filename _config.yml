@@ -1,6 +1,9 @@
 # Dependencies
 markdown:         kramdown
 highlighter:      rouge
+plugins:
+  - "jekyll-github-metadata"
+  - jekyll-feed
 
 # Permalinks
 permalink:        pretty
