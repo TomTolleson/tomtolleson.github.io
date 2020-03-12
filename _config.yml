@@ -18,7 +18,7 @@
 # in the templates via {{ site.myvariable }}.
 title: TomTolleson.github.io
 email: tomtolleson@gmail.com
-description: I'm a Data Engineer with Director-level management experience. I improve quality, consistency and organizational agility with secure, reliable data engineering. # this means to ignore newlines until "baseurl:"
+description: I'm a Data Engineer with director-level management experience. I improve quality, consistency and organizational agility with secure, reliable data engineering. # this means to ignore newlines until "baseurl:"
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://tomtolleson.github.io" # the base hostname & protocol for your site, e.g. http://example.com
