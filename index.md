@@ -1,6 +1,7 @@
 ## Core Competencies
 
 Google Cloud Platform: Lambda architecture, Big Table, Dataproc, Kubernetes and Big Query. 
+
 Amazon Web Services: Redshift, Athena. 
 
 Mapreduce with Hadoop, visualization with Tez, Hive, Spark, Hbase, Kafka, Zookeeper, Mesos Programming: SQL, Python, C++, Scala, R.
@@ -19,5 +20,11 @@ Machine Learning/Neural Networks with Tensorflow.
 
 ## My Github Projects and Repositories
 
+{% for repository in site.github.public_repositories %}
+  <a href='{{ repository.html_url }}'>
+    {{ repository.name }} 
+  </a>
 
+  <p>{{ repository.description }}</p>
+{% endfor %}
 
