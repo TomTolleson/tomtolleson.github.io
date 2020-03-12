@@ -19,8 +19,27 @@
 title: TomTolleson.github.io
 email: tomtolleson@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Data engineer, music composer and coastal navigator. 
-  I live in New York City.
+I'm a Data Engineer with director-level management experience and a mission to improve quality, consistency and organizational agility with secure, reliable data engineering. I manage teams using agile values and a safe culture.
+
+I provide air support to both data engineering and data science teams and guide analytics to bring sophisticated, evident insights into organizational processes. This drives change while improving reliability, scalability, and cost efficiency.
+
+Core Competencies:
+
+Google Cloud Platform: Lambda architecture, Big Table, Dataproc, Kubernetes and Big Query.
+Amazon Web Services: Redshift, Athena.
+Cloudera: Mapreduce with Hadoop, visualization with Tez, Hive, Spark, Hbase, Kafka, Zookeeper, Mesos
+Programming: SQL, Python, C++, Scala, R.
+
+Apache Airflow, Spotify Luigi, Docker, Docker Swarm.
+
+Relational Data warehouse design.
+NoSQL with MonghoDB, Cassandra, DynamoDB.
+Git with Github and Bitbucket.
+CI/CD with Travis, Circle and Bitbucket.
+
+Academic skills:
+
+Machine Learning/Neural Networks with Tensorflow. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://tomtolleson.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ThomasTolleson
