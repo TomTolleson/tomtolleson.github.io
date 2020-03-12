@@ -8,4 +8,3 @@
   <p>{{ repository.description }}</p>
 {% endfor %}
 
-
