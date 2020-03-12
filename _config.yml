@@ -17,7 +17,7 @@ author:
 
 paginate:         2
 google_analytics: 'UA-G-3VCDJS2WQH'
-bing_seo:		  'ECA8D4503D79297E7BB223666F18CAF8'
+bing_seo:		  
 emailme:          mailto:tomtolleson@gmail.com
 
 gems:             [jekyll-paginate, jekyll-seo-tag, jekyll-sitemap]
