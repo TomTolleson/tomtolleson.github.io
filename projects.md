@@ -5,125 +5,40 @@ title: Projects
 
 _________________
 
-## 3D Reconstruction of Endoscopic Image
+## Data Engineering, architecture and analytics (MacMillan Learning) 2017 - 2019
 
-* Stereo Correpsondence based on [Pyramid Stereo Matching Network](https://github.com/JiaRenChang/PSMNet)
-* Ground Truth Cleaning (RGB and Depth alignment) based on Iterative Closest Point
-* Ranked 4th in 2019 MICCAI [SCARED Challenge](https://endovissub2019-scared.grand-challenge.org/)
-* [More information about the method](http://longqian.me/2019/12/13/3d-reconstrcution-for-endoscopic-video/)
+In 2017, cofounded the Data Operations and Data Warehouse team for the Business Systems program at Macmillan Learning. This team crossed multiple functional groups included Sales (Salesforce.com), physical and digital product development/asset management and E-Commerce (SAP Hybris). A process of lean requirements gathering helped us through a variety of solutions architectures until we finally settled on a simple data repository solution using Amazon Redshift, raw data analysis with Amazon Redshift Spectrum and ETL with Lambda. We wanted to focus on the data and the business value rather than a complex architecture for the early phases of the project.
 
-<div style="width: 100%; text-align: right;">
-	<video width="100%" height="100%" align="right" src="/public/video/project_scared.mp4" type="video/mp4" autoplay loop muted></video>
-</div>
-_________________
-
-## Real-Time Telepresence
-
-* Using Azure Kinect and Microsoft HoloLens 2
-* Audience Award (best project award) for Medical Augmented Reality Summer School 2019
-* More information: [Teleporting the Expert Surgeon into Your OR](http://longqian.me/2019/08/29/teleporting-the-expert-into-your-operating-room/)
-
-<div style="width: 100%; text-align:right;">
-	<video width="100%" height="100%" align="right" src="/public/video/project_marss.mp4" type="video/mp4" autoplay loop muted></video>
-</div>
-_________________
-
-## ARAMIS
-
-* Augmented Realiy Assistance for Minimally-Invasive Surgery
-* CUDA-accelerated Semi-Global Block Matching algorithm
-* Real-time streaming and visualization on HoloLens
-* [Paper](https://link.springer.com/chapter/10.1007/978-3-030-32254-0_9) accepted for oral presentation at MICCAI 2019
-
-<div style="width: 100%; text-align: right;">
-	<video width="100%" height="100%" align="right" src="/public/video/project_aramis.mp4" type="video/mp4" autoplay loop muted></video>
-</div>
-_________________
-
-## Restoring the Lost Awareness Caused by HMD Occlusion
-
-* Current OST-HMDs occlude part of user's peripheral vision
-* We use screen edge or LED indicators to restore the loss awareness
-* [Paper](https://ieeexplore.ieee.org/document/8456571) accepted for ISMAR 2018 and IEEE TVCG
-
-<div style="width: 100%; text-align: right;">
-	<video width="100%" height="100%" align="right" src="/public/video/project_awareness.mp4" type="video/mp4" autoplay loop muted></video>
-</div>
-_________________
-
-## ARssist
-
-* [ARssist - Augmented Reality in Robotic Surgery](http://longqian.me/2019/04/09/arssist-augmented-reality-in-robotic-surgery/)
-* Precise overlay of robotic instrument and endoscope FOV indicator
-
-<div style="width: 100%; text-align: right;">
-	<video width="100%" height="100%" align="right" src="/public/video/project_arssist.mp4" type="video/mp4" autoplay loop muted></video>
-</div>
+The company already has a number of highly-skilled data analyst. Most come from a background in physics and have expertise in R. Analytics and regression modelling with R, Python and SQL were available to us in the early stages.
 
 _________________
 
-## dVRK Mixed Reality Extension
+## Onyx Decommission (Macmillan Learning) 2016-2017
 
-* [The Rationale behind dVRK-XR](http://longqian.me/2019/06/21/dvrk-xr/)
-* Enable mixed reality research for da Vinci Research Kit
+The Onyx platform was implemented and 19 years before the decommission project began. Originally a CRM system, Onyx had been customized over two decades to function as a central service bus, digital and physical product fulfillment system, product database, customer registration and digital product platform backend.
 
-<div style="width: 100%; text-align: right;">
-	<video width="100%" height="100%" align="right" src="/public/video/project_dvrkxr.mp4" type="video/mp4" autoplay loop muted></video>
-</div>
+Onyx was in some connected to almost every system in the Macmillan Learning infrastructure. That means in the process of decommission we were able to improve and enhance most of our business platforms and 17 major business services.
 
+Replacements services were created using Amazon Serverless technologies, WSO2 Data Services Layer, Salesforce and R Studio Server.
+
+The mandate was for the system to be removed by midnight December 31 . At its largest, the team consisted of 43 people spanning across four continents and countries (US, UK, Argentina and India) from every Macmillan partner as well as multiple independent consultants. The teams included Business Systems, Operations, Engineering, Quality Assurance, Development and more than a few jacks-of-all-trades.
+
+The project was one of the largest cross-functional initiatives in Macmillan’s recent history. By November, the team had created the future state of Macmillan Learning live in a lower tier. The team then re-released all the deployments again to ensure that the entire system could be deployed again without serious error. The team conducted dress rehearsal releases to have the deployment process in muscle memory for the actual deployment.
+
+Deployment of replacement services and decommission of Onyx took place overnight from December 21 into December 22nd with QA sign-off in the morning.
+
+Removal of the Onyx system cleared the path for me to manage the implementation of the company’s first big data platform in Amazon Redshift. The company now has the benefit of a fast, columnar data platform and conducts (predictive) analysis using R and Python.
 _________________
 
+## Global Deployment of Salesforce.com 2014 - 2015
 
-## Display Calibration for Optical HMDs
+Managed the data migration of multiple instances of over 12 different CRM systems into Cushman & Wakefield's global instance of Salesforce.com across 35 countries in multiple languages.
+Manage resources, timelines and budget in Microsoft Project.
+Continued to drive adoption through data cleansing with data.com clean Dun & Bradstreet and operational data loads of new users.
 
-* 3D-3D registration between the real world space and virtual space
+Planned and managed re-parenting exercises of contacts to surviving companies.
+Integrated multiple CRM systems with Salesforce Company, Contact, and Opportunity objects as well as multiple sales stages.
 
-<p class="full-width-clear">
-<img src="/public/image/project_calib3d.png" width="100%" align="right"/>
-</p>
-
-
+Linked integrated system opportunities with Workday for invoicing with Salesforce as financial forecasting tool.
 _________________
-
-
-## ARToolKit for HoloLens
-
-* Open source [repo](https://github.com/qian256/HoloLensARToolKit)
-* Native wrapper for ARToolKit library for UWP
-* Performance optimization for HoloLens
-* [More information about ARToolKit on HoloLens](http://longqian.me/2017/01/20/artoolkit-on-hololens/)
-
-<p class="full-width-clear">
-<img src="/public/image/artoolkit-hololens-minion-thumb.png" width="60%" align="right"/>
-</p>
-
-
-_________________
-
-
-## Augmented Reality for Combat Medics Training
-
-
-
-_________________
-
-
-## An Ethernet-to-FireWire Bridge
-
-* To ease the low-level communication for [da Vinci Research Kit](http://www.intuitive-foundation.org/dvrk/)
-
-<p class="full-width-clear">
-	<img src="/public/image/bridge.png" width="60%" align="right"/>
-</p>
-
-
-
-
-
-
-
-
-
-
-
 

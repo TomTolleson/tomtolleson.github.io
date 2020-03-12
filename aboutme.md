@@ -6,62 +6,79 @@ title: About Me
 
 <p class="full-width no-margin"><img src="/public/image/profile.jpg" alt="LQ" style="width:15rem;height:15rem;" align="right"/></p>
 
-<blockquote class="full-width"><p>Augmented Reality Programmer, Researcher and Enthusiast</p></blockquote>
+<blockquote class="full-width"><p>Data Engineer, Scientist and Composer</p></blockquote>
 
 
-I am Long Qian (<span lang="zh">钱隆</span>), a Ph.D student at the Department of Computer Science at [Johns Hopkins University](https://www.jhu.edu/). My research focuses are **Augmented Reality** and **Medical Robotics**, with emphasis on both scientific and engineering aspects. My supervisors are [Dr. Peter Kazanzides](https://www.cs.jhu.edu/faculty/peter-kazanzides/) and [Dr. Nassir Navab](https://www.cs.jhu.edu/faculty/nassir-navab/). Prior to my Ph.D studies, I received B.E. at the Department of Electronics Engineering at Tsinghua University, China.  [\[CV\]](/public/document/cv.pdf)
+I'm a Data Engineer with Director-level management experience. I improve quality, consistency and organizational agility with secure, reliable data engineering. I manage teams using agile values and a safe culture.
 
-### News
-* 2019/12 --- 1 paper accepted at IEEE T-MRB
-* 2019/10 --- Our team finished 4th place in MICCAI [SCARED challenge](https://endovissub2019-scared.grand-challenge.org/)
-* 2019/08 --- 1 paper accepted for oral presentation at MICCAI
-* 2019/08 --- Our team won the Best Project Award at [MARSS](https://www.medicalaugmentedreality.org/)
-* 2019/06 --- 1 paper received Honorable Mention for Best Paper Award at HSMR
-* 2019/01 --- 1 paper accepted at ICRA
-* 2018/12 --- I passed GBO examination.
-* 2018/10 --- 1 paper accepted at ISMAR and IEEE TVCG
+I provide air support to both data engineering and data science teams and guide analytics to bring sophisticated, evident insights into organizational processes. This drives change while improving reliability, scalability, and cost efficiency.
 
-### Selected Publication
+Core Competencies:
 
-For a full list of publication, please see [\[Google Scholar\]](https://scholar.google.com/citations?user=arq0l-IAAAAJ&hl=en).
+Google Cloud Platform: Lambda architecture, Big Table, Dataproc, Kubernetes and Big Query. Amazon Web Services: Redshift, Athena. Cloudera: Mapreduce with Hadoop, visualization with Tez, Hive, Spark, Hbase, Kafka, Zookeeper, Mesos Programming: SQL, Python, C++, Scala, R.
 
-* **Long Qian**, Jie Ying Wu, Simon DiMaio, Nassir Navab and Peter Kazanzides. *A Review of Augmented Reality in Robotic-Assisted Surgery*. 2019 IEEE T-MRB. [\[paper\]](https://ieeexplore.ieee.org/document/8918274) 
-* **Long Qian**, Xiran Zhang, Anton Deguet and Peter Kazanzides. *ARAMIS: Augmented Reality Assistance for Minimally Invasive Surgery using a Head-Mounted Display*. 2019 MICCAI. **\[Oral\]** [\[paper\]](https://link.springer.com/chapter/10.1007/978-3-030-32254-0_9) [\[video\]](https://link.springer.com/chapter/10.1007/978-3-030-32254-0_9#SupplementaryMaterial) [\[poster\]](/public/document/poster-aramis.pdf)
-* **Long Qian**, Anton Deguet and Peter Kazanzides. *dVRK-XR: Mixed Reality Extension for da Vinci Research Kit*. 2019 Hamlyn Symposium. **\[Best Paper Award, 2nd place\]** [\[preprint\]](/public/document/preprint-dvrkxr.pdf) [\[code\]](https://github.com/jhu-dvrk/dvrk-xr/)
-* **Long Qian**, Anton Deguet, Zerui Wang, Yun-Hui Liu and Peter Kazanzides. *Augmented Reality Assisted Instrument Insertion and Tool Manipulation for the First Assistant in Robotic Surgery*. 2019 ICRA [\[paper\]](https://ieeexplore.ieee.org/abstract/document/8794263/) [\[video\]](/public/document/video-arssist-eval.mp4)
-* **Long Qian**, Alexander Plopski, Nassir Navab and Peter Kazanzides. *Restoring the Awareness in the Occluded Visual Field for Optical See-Through Head-Mounted Displays*. 2018 ISMAR & TVCG [\[paper\]](https://ieeexplore.ieee.org/document/8456571/) [\[video\]](/public/document/video-restoring-the-awareness.mp4)
-* **Long Qian**, Anton Deguet and Peter Kazanzides. *ARssist: Augmented Reality on a Head-Mounted Display for the First Assistant in Robotic Surgery*. 2018 AE-CAI & IET HTL **\[Outstanding Paper Award\]** [\[paper\]](http://digital-library.theiet.org/content/journals/10.1049/htl.2018.5065) [\[poster\]](/public/document/poster-arssist.pdf) [\[video\]](/public/document/video-arssist.mp4)
-* **Long Qian**, Alexander Barthel, Alex Johnson, Greg Osgood, Peter Kazanzides, Nassir Navab and Bernhard Fuerst. *Comparison of Optical See-Through Head-Mounted Displays for Surgical Interventions with Object-Anchored 2D-Display*. 2017 IPCAI [\[paper\]](https://link.springer.com/article/10.1007/s11548-017-1564-y)
+Apache Airflow, Spotify Luigi, Docker, Docker Swarm.
+
+Relational Data warehouse design. NoSQL with MonghoDB, Cassandra, DynamoDB. Git with Github and Bitbucket. CI/CD with Travis, Circle and Bitbucket.
+
+Academic skills:
+
+Machine Learning/Neural Networks with Tensorflow.
+
+### Selected Publications
+* 2003/03 --- Graduate Research Paper at University of North Carolina, Chapel Hill (UNC) [Use of a 3D Graphic Environment in Superimposition Analysis](https://open-video.org/papers/3Danalysis.pdf)
+* 2004/10 --- My team in Graduate School at UNC SILS [Conceptions of Features and Semantic Clusters as Search Mechanisms: A Pilot Study](https://www-nlpir.nist.gov/projects/tvpubs/tvpapers04/unc.pdf)
+
 
 
 ### Professional Experience
 
-#### Internship
-* Software Engineer, [Google Daydream](https://vr.google.com/daydream/), Mountain View, 2017
-* Applied Research Engineer, [Intuitive Surgical](https://www.intuitivesurgical.com/), Sunnyvale, 2017
-* Data Analyst and Consultant, Accenture Beijing, 2015
+#### Director of Data Engineering, 360i
+In 2019 I met a group developing a data engineering platform during a Meetup of the New York Statistical Programming Group.
 
-#### Teaching Assistant
-* Robot Devices, Kinematics, Dynamics, and Control, Fall 2016 [\[course\]](https://limbs.lcsr.jhu.edu/people/cowan/courses/)
-* Intro Programming for Scientists & Engineers, Fall 2015 [\[course\]](http://www.cs.jhu.edu/~joanne/cs112/)
+* Lead a team of data engineers and applying hands-on skills to build data pipelines from multiple
+channels including Google, Facebook and Twitter.
+* Updated Apache Airflow to queue-based cluster with Celery and Redis as a message broker
+* Working closely with media teams to meet the need for data insight from clients as diverse as Mini
+Cooper, HBO, Amazon, Ben & Jerry's and Spotify.
+* Developed ETL in Python and supported analytics with visualizations with Shiny Apps, Tez and
+Tableau.
+* Performed analytics for CarMax Parquet files and semistructured data in Amazon Athena, Hadoop
+Mapreduce, Hive.
+* Data ETL with Kafka, MongoDB Stitch.
 
-#### Guest Lecturer
-* Augmented Reality, Spring 2018 & Spring 2019 [\[course\]](https://camp.lcsr.jhu.edu/spring2019/)
+#### Senior Project Manager - Solutions Architecture and Data, Macmillan Learning
+Brought in to Macmillan by a former coworker at Cushman & Wakefield who was assembling an “A-Team” under the new CEO.
 
-#### Research Assistant
+* Co-founded data pipeline and analytics system for Macmillan Learning. Provided Business Intelligence for executive negotiation with large contracts as well as more-focused sales, finance and marketing.
+* Created Data Warehouse in AWS with Amazon Redshift, DynamoDB for transactional data and Python in Lambda Functions.
+* Updated data pipeline to include containerized Python ETL with PyPi server.
+* Rescued failing revenue streams by keeping them active with digital product availability.
+* Converting failing infrastructure to Amazon Web Services Cloud. This involved Directed 43 resources across four continents and completed 2 weeks ahead of time.
+* Provided first actionable market-share based sales and marketing insights with "threat matrix" of competitor products.
+* Provided sales with previously non-existent insights such as potential customers using competitor products.
+* Reduced Capex spend by $50,000 within three months by replacing vendor data services.
+* Eliminated 40% duplication of effort on predictive analytics and data mapping initiatives.
+* Provided sales, marketing and production with baselines and tools to compete in their markets.
 
-For a list of projects, please see [\[Projects\]](http://longqian.me/projects/) page.
+#### Senior Project Manager - CRM Data, Cushman & Wakefield
+Hired by Cushman & Wakefield to consolidate the CRM systems of all global agents into a single, enterprise instance of Salesforce.com.
 
-* Evaluation of Augmented Reality Guidance for the First Assistant, 2019 Intuitive Clinical Research Grant
-* Augmented Reality for First Assistant in Robotics Surgery, 2018 Intuitive Technology Research Grant
-* Augmented Reality for Combat Medics Training, 2015 – 2017 [\[project\]](http://smarts.lcsr.jhu.edu/research/augmented-reality-hmd-research/)
-* Calibration Methods for Optical See-Through Head-Mounted Display, 2015 – 2017 [\[project\]](http://smarts.lcsr.jhu.edu/research/augmented-reality-hmd-research/)
-* Ethernet-Firewire Firmware for da Vinci Research Kit, 2014 [\[project\]](http://smarts.lcsr.jhu.edu/research/#Open_Source_Controller_for_da_Vinci_Research_Kit)
+*  Created a single set of measurable services across EMEA, APAC, and the Americas with a single, enterprise instance of Salesforce.com. The scope of this initiative was over 250 instances of 20 different CRM systems across 35 countries in multiple languages.
+*  Created single online experience for employees and customers using Okta SSO.
+*  Provided company with global forecasting insight between Salesforce opportunities and actuals.
 
+#### Senior Manager - Intranet Solutions and Architecture, AIG
+
+Charged with unifying the multiple intranet technologies into a single SharePoint/.Net intranet.
+
+* Provided single, global employee services with modernized and standardized global AIG intranet within a months.
+* Eliminated fragmented technical obstacles which previously kept global business units from aligning efforts.
+* Saved company 7-figure opportunity losses by creating efficient policy workflow from data insights on airline risk evaluations.
 
 ### Other Activities
 
-I am a fan of <i class="em em-football"></i> [Baltimore Ravens](https://www.baltimoreravens.com/) and a penya member of <i class="em em-soccer"></i> [FC Barcelona](https://www.fcbarcelona.com/).
+I am a classical music composer studting at The Juilliard School's Evening Division. My chamber music piece "Merry Guesswork" was selected for Juilliard's New Composers concert. My work is regularly featured in the yearly "New Music from Night School" concert. For more information about my music - [Tom Tolleson, Composer](https://tomtolleson.nyc)
 
-I also enjoy playing <i class="em em-tennis"></i> and <i class="em em-swimmer"></i>.
+I also enjoy travel, sailing and diving.
 

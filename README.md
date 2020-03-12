@@ -1,6 +1,6 @@
 # My Blog
 
-Recording pieces of code and life. [http://longqian.me](http://longqian.me)
+Building, solving. [http://tomtolleson.github.io](http://tomtolleson.github.io)
 
 ### Theme
 

@@ -9,5 +9,5 @@ title: Footprints
   -- <i>Blowin' in the Wind</i>, Bob Dylan
 </p>
 
-<iframe src="https://mapsengine.google.com/map/u/0/embed?mid=zCWZuTCMLtN4.kD-6Z1RcWz2o" width="100%" height="480"></iframe>
+<iframe src="https://www.google.com/maps/d/embed?mid=1BV2KyYeZcFCF6HhTdnJnJkwWciWZ0gN-" width="100%" height="480"></iframe>
 
