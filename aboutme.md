@@ -6,7 +6,7 @@ title: About Me
 
 <p class="full-width no-margin"><img src="/public/image/tom.jpg?raw=true" alt="THT" style="width:15rem;height:15rem;" align="right"/></p>
 
-<blockquote class="full-width"><p>Data Engineer, Scientist and Composer</p></blockquote>
+<blockquote class="full-width"><p>Data Engineer, Scientist and Composer.</p></blockquote>
 
 
 I'm a Data Engineer with Director-level management experience. I improve quality, consistency and organizational agility with secure, reliable data engineering. I manage teams using agile values and a safe culture.
@@ -80,7 +80,7 @@ Charged with unifying the multiple intranet technologies into a single SharePoin
 
 I am a classical music composer studting at The Juilliard School's Evening Division. My chamber music piece "Merry Guesswork" was selected for Juilliard's New Composers concert. My work is regularly featured in the yearly "New Music from Night School" concert. For more information about [my music](https://tomtolleson.nyc)
 
-I afounded and run a record label called [Dymaxion Groove Records](https://dymaxiongroove.com)
+I founded and run a record label called [Dymaxion Groove Records](https://dymaxiongroove.com)
 
 I also enjoy travel, sailing and diving.
 
