@@ -4,7 +4,7 @@ title: About Me
 ---
 
 
-<p class="full-width no-margin"><img src="/public/image/profile.jpg" alt="LQ" style="width:15rem;height:15rem;" align="right"/></p>
+<p class="full-width no-margin"><img src="tom.jpg" alt="LQ" style="width:15rem;height:15rem;" align="right"/></p>
 
 <blockquote class="full-width"><p>Data Engineer, Scientist and Composer</p></blockquote>
 
