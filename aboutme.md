@@ -4,7 +4,7 @@ title: About Me
 ---
 
 
-<p class="full-width no-margin"><img src="https://github.com/TomTolleson/tomtolleson.github.io/blob/master/tom.jpg?raw=true" alt="THT" style="width:15rem;height:15rem;" align="right"/></p>
+<p class="full-width no-margin"><img src="/public/image/tom.jpg?raw=true" alt="THT" style="width:15rem;height:15rem;" align="right"/></p>
 
 <blockquote class="full-width"><p>Data Engineer, Scientist and Composer</p></blockquote>
 
