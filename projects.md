@@ -28,6 +28,7 @@ The project was one of the largest cross-functional initiatives in Macmillan’s
 Deployment of replacement services and decommission of Onyx took place overnight from December 21 into December 22nd with QA sign-off in the morning.
 
 Removal of the Onyx system cleared the path for me to manage the implementation of the company’s first big data platform in Amazon Redshift. The company now has the benefit of a fast, columnar data platform and conducts (predictive) analysis using R and Python.
+
 _________________
 
 ## Global Deployment of Salesforce.com 2014 - 2015
@@ -40,5 +41,6 @@ Planned and managed re-parenting exercises of contacts to surviving companies.
 Integrated multiple CRM systems with Salesforce Company, Contact, and Opportunity objects as well as multiple sales stages.
 
 Linked integrated system opportunities with Workday for invoicing with Salesforce as financial forecasting tool.
+
 _________________
 
