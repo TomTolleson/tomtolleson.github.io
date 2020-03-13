@@ -78,9 +78,9 @@ Charged with unifying the multiple intranet technologies into a single SharePoin
 
 ### Other Activities
 
-I am a classical music composer studting at The Juilliard School's Evening Division. My chamber music piece "Merry Guesswork" was selected for Juilliard's New Composers concert. My work is regularly featured in the yearly "New Music from Night School" concert. For more information about [my music](https://tomtolleson.nyc)
+I am a classical music composer studting at The Juilliard School's Evening Division. My chamber music piece "Merry Guesswork" was selected for Juilliard's New Composers concert. My work is regularly featured in the yearly "New Music from Night School" concert. For more information about [my music](https://tomtolleson.nyc).
 
-I founded and run a record label called [Dymaxion Groove Records](https://dymaxiongroove.com)
+I founded and run a record label called [Dymaxion Groove Records](https://dymaxiongroove.com).
 
 I also enjoy travel, sailing and diving.
 
