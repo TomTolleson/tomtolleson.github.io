@@ -3,7 +3,6 @@ layout: page
 title: About Me
 ---
 
-
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897373-5"></script>
 <script>
@@ -13,9 +12,6 @@ title: About Me
 
   gtag('config', 'UA-114897373-5');
 </script>
-
-
-
 
 <p class="full-width no-margin"><img src="/public/image/tom.jpg?raw=true" alt="THT" style="width:15rem;height:15rem;" align="right"/></p>
 
