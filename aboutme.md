@@ -1,4 +1,4 @@
----
+io---
 layout: page
 title: About Me
 ---
@@ -18,21 +18,19 @@ title: About Me
 <blockquote class="full-width"><p>Data Engineer, Scientist and Composer.</p></blockquote>
 
 
-I'm a Data Engineer with Director-level management experience. I improve quality, consistency and organizational agility with secure, reliable data engineering. I manage teams using agile values and a safe culture.
+Senior data/security/infrastructure leader with 15+ years of planning, management, and data/infrastructure experience.
 
-I provide air support to both data engineering and data science teams and guide analytics to bring sophisticated, evident insights into organizational processes. This drives change while improving reliability, scalability, and cost efficiency.
+As a security director, I define and implement policies for security in vendor management as well as the software and data supply chain. I’m a leader in protection from LLM and AI vulnerabilities, as well as the ever-increasing attack surface of software development. 
+
+As a people manager, I lead transformation through automation as well as the recruitment of talent, which has an outsized impact on the trajectory of the company.
+
+I achieve buy-in for initiatives by building relationships with internal and external stakeholders. I keep managers and staff strategically aligned to maximize impact while providing input on tactical processes. This allows me to drive change while improving reliability, scalability, and cost efficiency.
 
 Core Competencies:
 
-Google Cloud Platform: Lambda architecture, Big Table, Dataproc, Kubernetes and Big Query. Amazon Web Services: Redshift, Athena. Cloudera: Mapreduce with Hadoop, visualization with Tez, Hive, Spark, Hbase, Kafka, Zookeeper, Mesos Programming: SQL, Python, C++, Scala, R.
+Google Cloud Platform: Lambda architecture, Prisma, Kubernetes and Big Query. Amazon Web Services: Redshift, Athena. Python, R.
 
-Apache Airflow, Spotify Luigi, Docker, Docker Swarm.
-
-Relational Data warehouse design. NoSQL with MonghoDB, Cassandra, DynamoDB. Git with Github and Bitbucket. CI/CD with Travis, Circle and Bitbucket.
-
-Academic skills:
-
-Machine Learning/Neural Networks with Tensorflow.
+ERP with SAS Business Suite.
 
 ### Selected Publications
 * 2003/03 --- Graduate Research Paper at University of North Carolina, Chapel Hill (UNC) [Use of a 3D Graphic Environment in Superimposition Analysis](https://open-video.org/papers/3Danalysis.pdf)
@@ -55,6 +53,20 @@ Tableau.
 * Performed analytics for CarMax Parquet files and semistructured data in Amazon Athena, Hadoop
 Mapreduce, Hive.
 * Data ETL with Kafka, MongoDB Stitch.
+
+#### Data Engineering Manager (Security and Infrastructure)
+
+I joined Benefits Data Trust as the Data Engineering Manager to design secure infrastructure and security policies for their new Google Cloud Infrastructure. In my first 18 months, I worked with Google engineers on a Google.org fellowship to define Google Cloud Security and Infrastructure. I transformed the company from manual data analysis to fully automated pipeline-based outreach marketing. This resulted in a data processing workload increase of over 300%. 
+
+I believe that disruptive companies share a talent for attracting individuals capable of transformation. During my time at BDT, I brought on several talented managers, analysts, and engineers who were able to deliver on my vision for taking BDT to the next level. Other accomplishments: 
+
+* Eliminated the duplication of Medicare auto-applications, which resulted in savings of over $8,000 per quarterly data ingested for a total of $32,000 per year in application fees. 
+* Prepared the company for the switch from MARS-E 2.2 Document Suite to MARS-E 3.0 with the Centers for Medicare & Medicaid Services (CMS) implementation guidance for NIST 800-53 Rev 5.
+* Audited infrastructure projects for adherence to the “shared responsibility” policy with Google Cloud Platform (GCP).
+* Negotiated a reduced yearly contract rate with Dataprep (Alteryx) for a first-year savings of $93,000. 
+* Defined security policy for data ingestion as supply-chain security.
+* Implemented LLM vulnerability blocks using RASA and SNYK Security for the “Wyatt” chatbot.
+* Worked closely with Google engineers to architect and deliver a security-compliant ELT solution for data ingestion pipelines on time and under budget.
 
 #### Senior Project Manager - Solutions Architecture and Data, Macmillan Learning
 Brought in to Macmillan by a former coworker at Cushman & Wakefield who was assembling an “A-Team” under the new CEO.
