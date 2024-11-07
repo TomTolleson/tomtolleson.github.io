@@ -5,6 +5,11 @@ title: Projects
 
 _________________
 
+## Google Cloud Engineering Fellowship google.org > Benefits Data Trust 2022-2024
+
+Collaborated with Google Engineering team to develop data pipelines, data platform and data quality monitoring in the Google Cloud Platform.
+
+
 ## Data Engineering, architecture and analytics (MacMillan Learning) 2017 - 2019
 
 In 2017, cofounded the Data Operations and Data Warehouse team for the Business Systems program at Macmillan Learning. This team crossed multiple functional groups included Sales (Salesforce.com), physical and digital product development/asset management and E-Commerce (SAP Hybris). A process of lean requirements gathering helped us through a variety of solutions architectures until we finally settled on a simple data repository solution using Amazon Redshift, raw data analysis with Amazon Redshift Spectrum and ETL with Lambda. We wanted to focus on the data and the business value rather than a complex architecture for the early phases of the project.
