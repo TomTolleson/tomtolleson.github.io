@@ -28,6 +28,8 @@ nbproject
 *.sublime-project
 *.sublime-workspace
 .idea
+tomtolleson.github.io.code-workspace
+
 
 # Komodo
 *.komodoproject
