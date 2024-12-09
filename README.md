@@ -1,6 +1,6 @@
 # My Blog
 
-[My Blog](https://tomtolleson.github.io)
+[My Blog](https://modelsandcycles.com)
 [My Projects](projects.md)
 
 This is the website for me, Tom Tolleson, hosted in github with a brief bit of information about me. My repos are listed to the right which, if nothing else, shows my interests and things I've been tinkering with.
