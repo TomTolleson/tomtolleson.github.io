@@ -1,6 +1,9 @@
 # My Blog
 
-This is the website for me, Tom Tolleson, hosted in github with a brief bit of information about me. My repos are listed to the right which, if nothing else, shows my interests and things I've been tinkering with. I like to tinker.
+[My Blog](https://tomtolleson.github.io)
+[My Projects](projects.md)
+
+This is the website for me, Tom Tolleson, hosted in github with a brief bit of information about me. My repos are listed to the right which, if nothing else, shows my interests and things I've been tinkering with.
 
 Items you won't see here: I studied music composition at <a href="https://www.juilliard.edu/">The Juilliard School</a> and have composed music using <a href="https://en.wikipedia.org/wiki/Lisp_(programming_language)">LISP</a> and an ide known as <a href="https://opusmodus.com/">OpusModus</a>.
 
