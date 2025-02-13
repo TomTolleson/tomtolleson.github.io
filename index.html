@@ -51,15 +51,30 @@ title: Home
       displayRepos.forEach(repo => {
         const repoCard = document.createElement('div');
         repoCard.className = 'repo-card';
+        
+        // Define color mapping for languages
+        const languageColors = {
+          'Python': 'blue',
+          'JavaScript': 'yellow',
+          'Java': 'orange',
+          'Scala': 'red',
+          // Add more languages and colors as needed
+        };
+        
+        // Create badge URL with custom color
+        const badgeColor = languageColors[repo.language] || 'blue';
+        const languageBadge = repo.language ? 
+          `<img src="https://img.shields.io/badge/${repo.language.replace('#', '%23')}-latest-${badgeColor}.svg" alt="${repo.language}"/>` : '';
+        
         repoCard.innerHTML = `
           <a href="${repo.html_url}">
             <h2>${repo.name}</h2>
           </a>
           <p>${repo.description || ''}</p>
-          ${repo.language ? `<p class="repo-language">🔸 ${repo.language}</p>` : ''}
+          ${languageBadge}
           <p class="repo-stats">
-            ⭐ ${repo.stargazers_count} stars
-            ${repo.forks_count ? `| 🍴 ${repo.forks_count} forks` : ''}
+            <img src="https://img.shields.io/github/stars/${username}/${repo.name}?style=social" alt="Stars"/>
+            ${repo.forks_count ? `<img src="https://img.shields.io/github/forks/${username}/${repo.name}?style=social" alt="Forks"/>` : ''}
           </p>
         `;
         reposContainer.appendChild(repoCard);
@@ -92,14 +107,12 @@ title: Home
       text-decoration: none;
       color: #0366d6;
     }
-    .repo-language {
-      color: #586069;
-      font-size: 14px;
-      margin: 8px 0;
+    .repo-card img {
+      margin-right: 4px;
+      vertical-align: middle;
     }
     .repo-stats {
-      color: #586069;
-      font-size: 14px;
+      margin-top: 8px;
     }
     .error-message {
       padding: 16px;
