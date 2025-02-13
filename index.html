@@ -38,8 +38,9 @@ title: Home
       const reposContainer = document.getElementById('pinned-repos');
       reposContainer.innerHTML = '';
       
+      const excludeRepos = ['tomtolleson.github.io', 'other-repo-to-hide'];
       const displayRepos = repos
-        .filter(repo => !repo.fork && !repo.archived)
+        .filter(repo => !repo.fork && !repo.archived && !excludeRepos.includes(repo.name))
         .slice(0, 6);
       
       if (displayRepos.length === 0) {
