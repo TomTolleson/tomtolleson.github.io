@@ -17,6 +17,16 @@ title: Home
 <h1>My Github Projects and Repositories</h1>
 <div id="pinned-repos"></div>
 
+<!-- Add this contact section -->
+<div class="contact-section">
+  <h2>Contact Me</h2>
+  <p>
+    <a href="{{ site.emailme }}" class="contact-link">
+      <img src="https://img.shields.io/badge/Email-Contact%20Me-blue" alt="Contact Me"/>
+    </a>
+  </p>
+</div>
+
 <script>
   const username = 'TomTolleson';
   
@@ -78,7 +88,7 @@ title: Home
           </p>
         `;
         reposContainer.appendChild(repoCard);
-      });
+      });x
     } catch (error) {
       console.error('Error:', error);
       document.getElementById('pinned-repos').innerHTML = `
@@ -120,6 +130,21 @@ title: Home
       background-color: #fafafa;
       border-radius: 6px;
       border: 1px solid #eee;
+    }
+    
+    .contact-section {
+      margin: 20px 0;
+      padding: 16px;
+      border-radius: 6px;
+      background-color: #fff;
+    }
+    
+    .contact-link {
+      text-decoration: none;
+    }
+    
+    .contact-link:hover {
+      opacity: 0.8;
     }
   `;
   document.head.appendChild(style);
