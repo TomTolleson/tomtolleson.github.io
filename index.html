@@ -18,39 +18,81 @@ title: Home
 <div id="pinned-repos"></div>
 
 <script>
-  const username = 'TomTolleson'; // Replace with your actual GitHub username
+  const username = 'TomTolleson';
   
   async function getPinnedRepos() {
-    const response = await fetch(`https://gh-pinned-repos.egoist.dev/api/user/${username}`);
-    const repos = await response.json();
-    
-    const reposContainer = document.getElementById('pinned-repos');
-    reposContainer.innerHTML = ''; // Clear existing content
-    
-    if (!repos || repos.length === 0) {
-      reposContainer.innerHTML = '<p>No pinned repositories found</p>';
-      return;
+    try {
+      const response = await fetch(`https://api.github.com/users/${username}/repos`);
+      const repos = await response.json();
+      
+      const reposContainer = document.getElementById('pinned-repos');
+      reposContainer.innerHTML = '';
+      
+      // Filter for repositories that exist and sort by stars
+      const sortedRepos = repos
+        .filter(repo => !repo.fork) // Exclude forked repositories
+        .sort((a, b) => b.stargazers_count - a.stargazers_count)
+        .slice(0, 6); // Show top 6 repos
+      
+      if (sortedRepos.length === 0) {
+        reposContainer.innerHTML = '<p>No repositories found</p>';
+        return;
+      }
+      
+      sortedRepos.forEach(repo => {
+        const repoCard = `
+          <div class="repo-card">
+            <a href="${repo.html_url}">
+              <h2>${repo.name}</h2>
+            </a>
+            <p>${repo.description || ''}</p>
+            ${repo.language ? `<p class="repo-language">🔸 ${repo.language}</p>` : ''}
+            <p class="repo-stats">
+              ⭐ ${repo.stargazers_count} stars
+              ${repo.forks_count ? `| 🍴 ${repo.forks_count} forks` : ''}
+            </p>
+          </div>
+        `;
+        reposContainer.innerHTML += repoCard;
+      });
+    } catch (error) {
+      console.error('Error fetching repos:', error);
+      document.getElementById('pinned-repos').innerHTML = 
+        '<p>Error loading repositories. Please check the GitHub username.</p>';
     }
-    
-    repos.forEach(repo => {
-      const repoCard = `
-        <div class="repo-card">
-          <a href="${repo.link}">
-            <h2>${repo.repo}</h2>
-          </a>
-          <p>${repo.description || ''}</p>
-          ${repo.language ? `<p class="repo-language">${repo.language}</p>` : ''}
-        </div>
-      `;
-      reposContainer.innerHTML += repoCard;
-    });
   }
 
+  // Add some basic styles
+  const style = document.createElement('style');
+  style.textContent = `
+    .repo-card {
+      border: 1px solid #e1e4e8;
+      border-radius: 6px;
+      padding: 16px;
+      margin-bottom: 16px;
+      background-color: #fff;
+    }
+    .repo-card h2 {
+      margin: 0 0 8px 0;
+      font-size: 20px;
+    }
+    .repo-card a {
+      text-decoration: none;
+    }
+    .repo-language {
+      color: #586069;
+      font-size: 14px;
+      margin: 8px 0;
+    }
+    .repo-stats {
+      color: #586069;
+      font-size: 14px;
+    }
+  `;
+  document.head.appendChild(style);
+
   // Call the function when the page loads
-  getPinnedRepos().catch(error => {
-    console.error('Error fetching pinned repos:', error);
-    document.getElementById('pinned-repos').innerHTML = '<p>Error loading repositories</p>';
-  });
+  getPinnedRepos();
 </script>
 
 
