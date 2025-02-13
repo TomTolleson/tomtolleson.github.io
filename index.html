@@ -22,70 +22,58 @@ title: Home
   
   async function getPinnedRepos() {
     try {
-      const response = await fetch(`https://api.github.com/users/${username}/repos`, {
+      // Using public API with no authentication
+      const response = await fetch(`https://api.github.com/users/${username}/repos?sort=updated&per_page=6`, {
         headers: {
           'Accept': 'application/vnd.github.v3+json'
-        }
+        },
+        cache: 'no-store'
       });
 
       if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(`GitHub API Error: ${response.status} - ${errorData.message}`);
+        throw new Error(`GitHub API Error: ${response.status}`);
       }
 
       const repos = await response.json();
-      
       const reposContainer = document.getElementById('pinned-repos');
       reposContainer.innerHTML = '';
       
-      if (!Array.isArray(repos)) {
-        throw new Error('Invalid response format from GitHub API');
-      }
-
-      const sortedRepos = repos
-        .filter(repo => !repo.fork)
-        .sort((a, b) => b.stargazers_count - a.stargazers_count)
+      const displayRepos = repos
+        .filter(repo => !repo.fork && !repo.archived)
         .slice(0, 6);
       
-      if (sortedRepos.length === 0) {
-        reposContainer.innerHTML = '<p>No public repositories found for this user</p>';
+      if (displayRepos.length === 0) {
+        reposContainer.innerHTML = '<p>No public repositories found</p>';
         return;
       }
       
-      sortedRepos.forEach(repo => {
-        const repoCard = `
-          <div class="repo-card">
-            <a href="${repo.html_url}">
-              <h2>${repo.name}</h2>
-            </a>
-            <p>${repo.description || ''}</p>
-            ${repo.language ? `<p class="repo-language">🔸 ${repo.language}</p>` : ''}
-            <p class="repo-stats">
-              ⭐ ${repo.stargazers_count} stars
-              ${repo.forks_count ? `| 🍴 ${repo.forks_count} forks` : ''}
-            </p>
-          </div>
+      displayRepos.forEach(repo => {
+        const repoCard = document.createElement('div');
+        repoCard.className = 'repo-card';
+        repoCard.innerHTML = `
+          <a href="${repo.html_url}">
+            <h2>${repo.name}</h2>
+          </a>
+          <p>${repo.description || ''}</p>
+          ${repo.language ? `<p class="repo-language">🔸 ${repo.language}</p>` : ''}
+          <p class="repo-stats">
+            ⭐ ${repo.stargazers_count} stars
+            ${repo.forks_count ? `| 🍴 ${repo.forks_count} forks` : ''}
+          </p>
         `;
-        reposContainer.innerHTML += repoCard;
+        reposContainer.appendChild(repoCard);
       });
     } catch (error) {
-      console.error('Detailed error:', error);
+      console.error('Error:', error);
       document.getElementById('pinned-repos').innerHTML = `
         <div class="error-message">
-          <p>Error loading repositories:</p>
-          <p>${error.message}</p>
-          <p>Please check:</p>
-          <ul>
-            <li>The GitHub username is correct</li>
-            <li>The user has public repositories</li>
-            <li>GitHub API rate limits haven't been exceeded</li>
-          </ul>
+          <p>Unable to load repositories at this time.</p>
         </div>
       `;
     }
   }
 
-  // Add some basic styles
+  // Add styles
   const style = document.createElement('style');
   style.textContent = `
     .repo-card {
@@ -101,6 +89,7 @@ title: Home
     }
     .repo-card a {
       text-decoration: none;
+      color: #0366d6;
     }
     .repo-language {
       color: #586069;
@@ -112,20 +101,17 @@ title: Home
       font-size: 14px;
     }
     .error-message {
-      border: 1px solid #f88;
-      border-radius: 6px;
       padding: 16px;
-      background-color: #fff;
       color: #666;
-    }
-    .error-message ul {
-      margin-top: 8px;
+      background-color: #fafafa;
+      border-radius: 6px;
+      border: 1px solid #eee;
     }
   `;
   document.head.appendChild(style);
 
-  // Call the function when the page loads
-  getPinnedRepos();
+  // Load repos when the page loads
+  document.addEventListener('DOMContentLoaded', getPinnedRepos);
 </script>
 
 
