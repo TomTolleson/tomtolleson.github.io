@@ -12,8 +12,8 @@ permalink:        pretty
 # Setup
 title:            Tom Tolleson
 tagline:          'Tom Tolleson'
-description:      'Engineer / Project Manager'
-url:              http://tomtolleson.github.io/
+description:      'Portfolio of engineering and data projects by Tom Tolleson. Showcasing Oracle Cloud Infrastructure implementations, clinical trial data management systems, and technical project management expertise.'
+url:              https://tomtolleson.github.io/
 
 author:
   name:           'Tom Tolleson'
