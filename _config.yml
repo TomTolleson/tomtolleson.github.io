@@ -13,11 +13,11 @@ permalink:        pretty
 title:            Tom Tolleson
 tagline:          'Tom Tolleson'
 description:      'Portfolio of engineering and data projects by Tom Tolleson. Showcasing Oracle Cloud Infrastructure implementations, clinical trial data management systems, and technical project management expertise.'
-url:              https://tomtolleson.github.io/
+url:              https://tomtolleson.github.io
 
 author:
   name:           'Tom Tolleson'
-  url:            http://tomtolleson.github.io/
+  url:            http://tomtolleson.github.io
 
 paginate:         2
 google_analytics: 'UA-114897373-5'
