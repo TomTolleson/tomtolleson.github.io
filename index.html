@@ -1,226 +1,264 @@
----
-layout: default
-title: Home
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tom Tolleson — AI Risk and Governance</title>
+<meta name="description" content="Tom Tolleson is a risk and governance leader working on AI governance for health plans, health systems, and insurance carriers. Founder of Stanchion.">
+<link rel="canonical" href="https://tomtolleson.github.io/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Tom Tolleson — AI Risk and Governance">
+<meta property="og:description" content="Risk and governance leader working on AI governance for health plans, health systems, and insurance carriers. Founder of Stanchion.">
+<meta property="og:url" content="https://tomtolleson.github.io/">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#16202b;
+    --paper:#fbfaf7;
+    --rule:#d7d3ca;
+    --muted:#5f6771;
+    --mark:#7a5c2e;
+    --measure:34rem;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Newsreader",Georgia,"Times New Roman",serif;
+    font-size:17px;
+    font-weight:400;
+    line-height:1.6;
+    font-variant-numeric:tabular-nums;
+  }
+  .page{max-width:56rem;margin:0 auto;padding:5rem 1.75rem 6rem}
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897373-5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  /* ---- masthead ---- */
+  .masthead{margin-bottom:3.25rem}
+  h1{
+    font-size:clamp(2.6rem,7vw,4rem);
+    font-weight:500;
+    line-height:1.02;
+    letter-spacing:-.022em;
+    margin:0 0 .5rem;
+  }
+  .standfirst{
+    font-size:clamp(1.15rem,2.4vw,1.4rem);
+    font-weight:400;
+    color:var(--muted);
+    margin:0 0 1.5rem;
+    max-width:30rem;
+    line-height:1.35;
+  }
+  .contact{
+    font-size:.94rem;
+    color:var(--muted);
+    line-height:2;
+    margin:0;
+  }
+  .contact a{color:var(--muted);text-decoration:none;border-bottom:1px solid var(--rule)}
+  .contact a:hover{color:var(--ink);border-bottom-color:var(--ink)}
+  .sep{padding:0 .55rem;color:var(--rule)}
 
-  gtag('config', 'UA-114897373-5');
-</script>
-
-
-<h1>My Github Projects and Repositories</h1>
-<div id="pinned-repos"></div>
-
-<script>
-  const username = 'TomTolleson';
-  
-  async function getPinnedRepos() {
-    try {
-      // Using public API with no authentication
-      const response = await fetch(`https://api.github.com/users/${username}/repos?sort=updated&per_page=6`, {
-        headers: {
-          'Accept': 'application/vnd.github.v3+json'
-        },
-        cache: 'no-store'
-      });
-
-      if (!response.ok) {
-        throw new Error(`GitHub API Error: ${response.status}`);
-      }
-
-      const repos = await response.json();
-      const reposContainer = document.getElementById('pinned-repos');
-      reposContainer.innerHTML = '';
-      
-      const excludeRepos = ['tomtolleson.github.io', 'other-repo-to-hide'];
-      const displayRepos = repos
-        .filter(repo => !repo.fork && !repo.archived && !excludeRepos.includes(repo.name))
-        .slice(0, 6);
-      
-      if (displayRepos.length === 0) {
-        reposContainer.innerHTML = '<p>No public repositories found</p>';
-        return;
-      }
-      
-      displayRepos.forEach(repo => {
-        const repoCard = document.createElement('div');
-        repoCard.className = 'repo-card';
-        
-        // Define color mapping for languages
-        const languageColors = {
-          'Python': 'blue',
-          'JavaScript': 'yellow',
-          'Java': 'orange',
-          'Scala': 'red',
-          // Add more languages and colors as needed
-        };
-        
-        // Create badge URL with custom color
-        const badgeColor = languageColors[repo.language] || 'blue';
-        const languageBadge = repo.language ? 
-          `<img src="https://img.shields.io/badge/${repo.language.replace('#', '%23')}-latest-${badgeColor}.svg" alt="${repo.language}"/>` : '';
-        
-        repoCard.innerHTML = `
-          <a href="${repo.html_url}">
-            <h2>${repo.name}</h2>
-          </a>
-          <p>${repo.description || ''}</p>
-          ${languageBadge}
-          <p class="repo-stats">
-            <img src="https://img.shields.io/github/stars/${username}/${repo.name}?style=social" alt="Stars"/>
-            ${repo.forks_count ? `<img src="https://img.shields.io/github/forks/${username}/${repo.name}?style=social" alt="Forks"/>` : ''}
-          </p>
-        `;
-        reposContainer.appendChild(repoCard);
-      });
-    } catch (error) {
-      console.error('Error:', error);
-      document.getElementById('pinned-repos').innerHTML = `
-        <div class="error-message">
-          <p>Unable to load repositories at this time.</p>
-        </div>
-      `;
-    }
+  /* ---- register rows: label column + content column ---- */
+  .row{
+    display:grid;
+    grid-template-columns:11rem 1fr;
+    gap:0 2.5rem;
+    border-top:1px solid var(--rule);
+    padding:1.6rem 0;
+  }
+  .row:last-of-type{border-bottom:1px solid var(--rule)}
+  .rowlabel{
+    font-size:.9rem;
+    color:var(--muted);
+    line-height:1.45;
+    padding-top:.28rem;
+  }
+  .rowbody{max-width:var(--measure)}
+  .rowbody p{margin:0 0 .85rem}
+  .rowbody p:last-child{margin-bottom:0}
+  h2{
+    font-size:1.16rem;
+    font-weight:600;
+    letter-spacing:-.006em;
+    margin:0 0 .5rem;
   }
 
-  // Add styles
-  const style = document.createElement('style');
-  style.textContent = `
-    .repo-card {
-      border: 1px solid #e1e4e8;
-      border-radius: 6px;
-      padding: 16px;
-      margin-bottom: 16px;
-      background-color: #fff;
-    }
-    .repo-card h2 {
-      margin: 0 0 8px 0;
-      font-size: 20px;
-    }
-    .repo-card a {
-      text-decoration: none;
-      color: #0366d6;
-    }
-    .repo-card img {
-      margin-right: 4px;
-      vertical-align: middle;
-    }
-    .repo-stats {
-      margin-top: 8px;
-    }
-    .error-message {
-      padding: 16px;
-      color: #666;
-      background-color: #fafafa;
-      border-radius: 6px;
-      border: 1px solid #eee;
-    }
-    
-    .contact-section {
-      margin: 20px 0;
-      padding: 16px;
-      border-radius: 6px;
-      background-color: #fff;
-    }
-    
-    .contact-link {
-      text-decoration: none;
-    }
-    
-    .contact-link:hover {
-      opacity: 0.8;
-    }
-  `;
-  document.head.appendChild(style);
+  /* ---- stanchion block: the one loud element ---- */
+  .practice{
+    display:block;
+    text-decoration:none;
+    color:inherit;
+    border-top:2px solid var(--ink);
+    padding:1.9rem 0 .25rem;
+    margin:3.25rem 0 2.75rem;
+  }
+  .practice .name{
+    display:block;
+    font-size:clamp(1.9rem,4.6vw,2.5rem);
+    font-weight:500;
+    letter-spacing:-.02em;
+    line-height:1.05;
+    margin-bottom:.45rem;
+  }
+  .practice .what{
+    display:block;
+    max-width:var(--measure);
+    color:var(--muted);
+    margin-bottom:1rem;
+  }
+  .practice .go{
+    display:inline-block;
+    font-size:.95rem;
+    color:var(--mark);
+    border-bottom:1px solid var(--mark);
+    padding-bottom:1px;
+  }
+  .practice:hover .go,.practice:focus-visible .go{color:var(--ink);border-bottom-color:var(--ink)}
 
-  // Load repos when the page loads
-  document.addEventListener('DOMContentLoaded', getPinnedRepos);
-</script>
+  /* ---- lists ---- */
+  ul{list-style:none;margin:0;padding:0}
+  .creds li{margin-bottom:.5rem;padding-left:1.05rem;position:relative}
+  .creds li:last-child{margin-bottom:0}
+  .creds li::before{
+    content:"";
+    position:absolute;
+    left:0;top:.72em;
+    width:.42rem;height:1px;
+    background:var(--muted);
+  }
+  .role{margin-bottom:1.15rem}
+  .role:last-child{margin-bottom:0}
+  .role .who{font-weight:600}
+  .role .when{color:var(--muted);font-size:.92rem;margin-left:.4rem;white-space:nowrap}
+  .role .did{display:block;color:var(--muted);font-size:.97rem;line-height:1.5}
+  .pubs li{margin-bottom:.7rem;line-height:1.45}
+  .pubs li:last-child{margin-bottom:0}
+  .pubs a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--rule)}
+  .pubs a:hover{border-bottom-color:var(--ink)}
+  .pubs .venue{display:block;color:var(--muted);font-size:.9rem}
 
+  footer{margin-top:3rem;color:var(--muted);font-size:.94rem;max-width:var(--measure)}
+  footer a{color:var(--muted);border-bottom:1px solid var(--rule);text-decoration:none}
+  footer a:hover{color:var(--ink);border-bottom-color:var(--ink)}
 
-<div class="posts">
-  <!-- Pined posts -->
-  {% if paginator.page == 1 %}
-    {% for post in site.posts %}
-      {% if post.pined %}
-        {% if post.lang %}
-        <div class="post" lang="{{post.lang}}">
-        {% else %}
-        <div class="post">
-        {% endif %}
-          <h1 class="post-title"><i class="em em-round_pushpin"></i>&nbsp;<a href="{{ post.url }}">{{ post.title }}</a></h1>
+  a:focus-visible,.practice:focus-visible{
+    outline:2px solid var(--mark);
+    outline-offset:3px;
+  }
 
-          <span class="post-tags">
-            [&nbsp;
-            {% for tag in post.tags %}
-              {% capture tag_name %}{{ tag }}{% endcapture %}
-              <a class="no-underline" href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>    
-            {% endfor %}
-            ]
-          </span>
+  @media (max-width:620px){
+    .page{padding:3rem 1.35rem 4rem}
+    .row{grid-template-columns:1fr;gap:.55rem 0;padding:1.35rem 0}
+    .rowlabel{padding-top:0}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none!important;transition:none!important}
+  }
+</style>
+</head>
+<body>
+<main class="page">
 
-          <span class="post-date">{{ post.date | date_to_string }}</span>
+  <header class="masthead">
+    <h1>Tom Tolleson</h1>
+    <p class="standfirst">AI risk and governance in regulated industries — healthcare, insurance, and financial services.</p>
+    <p class="contact">
+      <span style="white-space:nowrap">New York</span><span class="sep">/</span><a href="mailto:tomtolleson@gmail.com">tomtolleson@gmail.com</a><span class="sep">/</span><a href="https://www.linkedin.com/in/tomtolleson">LinkedIn</a><span class="sep">/</span><a href="https://github.com/TomTolleson">GitHub</a>
+    </p>
+  </header>
 
-          {{ post.content }}
-        </div>
-        <hr>
-      {% endif %}
-    {% endfor %}
-  {% endif %}
-
-  <!-- Normal posts listed in the order of time -->
-
-  {% for post in paginator.posts %}
-  {% if post.lang %}
-  <div class="post" lang="{{post.lang}}">
-  {% else %}
-  <div class="post">
-  {% endif %}
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
-
-    <span class="post-tags">
-      [&nbsp;
-      {% for tag in post.tags %}
-        {% capture tag_name %}{{ tag }}{% endcapture %}
-        <a class="no-underline" href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>    
-      {% endfor %}
-      ]
-    </span>
-
-    <span class="post-date">{{ post.date | date_to_string }}</span>
-
-    {{ post.content }}
+  <div class="row">
+    <div class="rowlabel">Practice</div>
+    <div class="rowbody">
+      <p>I work on the governance side of AI: deciding whether a system should be deployed, under what controls, with what human oversight, and how it gets monitored once it is live.</p>
+      <p>Fifteen years of program leadership in regulated environments preceded this — building a HIPAA and SOC 2 compliance framework with legal and executive leadership, assessing systems against DoD security standards, and aligning technical roadmaps with regulatory requirements at Aetna and Benefits Data Trust.</p>
+      <p>Enough fluency with LLM and retrieval systems to challenge a vendor's claims without waiting for an engineer to interpret them.</p>
+    </div>
   </div>
-  <hr>
-  {% endfor %}
-</div>
 
+  <a class="practice" href="https://stanchionsecurity.com">
+    <span class="name">Stanchion</span>
+    <span class="what">An advisory practice for AI governance in healthcare and insurance. Use case risk assessments, regulatory mapping, and control design for organizations deploying AI faster than they can govern it.</span>
+    <span class="go">stanchionsecurity.com</span>
+  </a>
 
-<!-- Pagination -->
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="/page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="/">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="/page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
- 
+  <div class="row">
+    <div class="rowlabel">Credentials</div>
+    <div class="rowbody">
+      <ul class="creds">
+        <li>AIGP — Artificial Intelligence Governance Professional, IAPP (in progress)</li>
+        <li>CPHIMS — Certified Professional in Healthcare Information and Management Systems, HIMSS (in progress)</li>
+        <li>CompTIA Security+</li>
+        <li>Position of Public Trust (SSA) and DoD Secret clearances, active</li>
+        <li>MSIS, Information Science — University of North Carolina at Chapel Hill</li>
+        <li>BA, English Language and Literature — University of New Mexico</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="rowlabel">Frameworks</div>
+    <div class="rowbody">
+      <p>NIST AI Risk Management Framework, ISO/IEC 42001, the NAIC model bulletin on insurer AI use, HIPAA, SOC 2, and the growing body of state law governing AI in utilization review and prior authorization.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="rowlabel">Selected work</div>
+    <div class="rowbody">
+      <div class="role">
+        <span class="who">Stanchion</span><span class="when">2026–</span>
+        <span class="did">Founder. AI governance advisory for health plans, health systems, and carriers.</span>
+      </div>
+      <div class="role">
+        <span class="who">Uniphore</span><span class="when">2025–2026</span>
+        <span class="did">Technical Program Manager. Program governance and executive alignment for enterprise customer data platform deployments at Fortune 500 clients.</span>
+      </div>
+      <div class="role">
+        <span class="who">Benefits Data Trust</span><span class="when">2021–2024</span>
+        <span class="did">Data Engineering Program Manager. Built the organization's HIPAA and SOC 2 compliance framework; led cloud migration of a regulated benefits data environment.</span>
+      </div>
+      <div class="role">
+        <span class="who">Aetna, a CVS Health Company</span><span class="when">2020–2021</span>
+        <span class="did">Director of Data Engineering. Led 35+ engineers; aligned roadmap with HIPAA, SOC 2, and Oracle Clinical requirements.</span>
+      </div>
+      <div class="role">
+        <span class="who">Macmillan Learning</span><span class="when">2015–2019</span>
+        <span class="did">Senior Project Manager. Directed a 45-person global cloud migration across engineering, operations, and security.</span>
+      </div>
+      <div class="role">
+        <span class="who">United States Naval Academy</span><span class="when">2012–2013</span>
+        <span class="did">Clinical Data Manager. Security control assessments against DoD STIGs across systems handling protected health information.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="rowlabel">Publications</div>
+    <div class="rowbody">
+      <ul class="pubs">
+        <li>
+          <a href="https://www-nlpir.nist.gov/projects/tvpubs/tvpapers04/unc.pdf">Conceptions of Features and Semantic Clusters as Search Mechanisms: A Pilot Study</a>
+          <span class="venue">UNC School of Information and Library Science, 2004</span>
+        </li>
+        <li>
+          <a href="https://open-video.org/papers/3Danalysis.pdf">Use of a 3D Graphic Environment in Superimposition Analysis</a>
+          <span class="venue">University of North Carolina at Chapel Hill, 2003</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <p>Away from work I compose music and run <a href="https://www.dymaxiongroove.com/">Dymaxion Groove</a>, a small record label.</p>
+  </footer>
+
+</main>
+</body>
+</html>
